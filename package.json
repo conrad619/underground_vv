@@ -1,0 +1,29 @@
+{
+  "name": "mini-ssg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "watch": {
+    "html": {
+      "patterns": ["dev"],
+      "extensions": "html,css"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "minissg",
+    "ssg": "minissg --watch",
+    "dev": "npx tailwindcss build -i dev/static/css/main.css -o dev/static/css/style.css --watch",
+    "watch": "npm-watch",
+    "html": "npx tailwindcss build -i dev/static/css/main.css -o dev/static/css/style.css && minissg"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "mini-ssg": "^0.2.2",
+    "npm-watch": "^0.11.0",
+    "tailwindcss": "^3.0.24"
+  }
+}
